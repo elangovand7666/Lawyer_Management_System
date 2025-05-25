@@ -1,0 +1,237 @@
+/* CaseView.css - White and sky blue color scheme */
+
+/* Main container */
+.caseview-container {
+    min-height: 100vh;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-image: radial-gradient(circle at 10% 20%, rgba(216, 241, 230, 0.46) 0%, rgba(233, 226, 226, 0.28) 50.3%, rgba(201, 222, 235, 0.6) 90%);
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Card styling */
+  .caseview-card {
+    width: 100%;
+    max-width: 900px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 30px rgba(0, 149, 255, 0.1);
+    overflow: hidden;
+    margin-bottom: 2rem;
+  }
+  
+  /* Header section */
+  .caseview-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    background-color: #f0f9ff;
+    border-bottom: 1px solid #d1e9ff;
+  }
+  
+  .caseview-title {
+    color: #0078d4;
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin: 0;
+  }
+  
+  .caseview-status-badge {
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: white;
+    background-color: #84c5fe;
+  }
+  
+  .caseview-status-badge[data-status="Active"] {
+    background-color: #00b3b3;
+  }
+  
+  .caseview-status-badge[data-status="Completed"] {
+    background-color: #4d94ff;
+  }
+  
+  /* Card body */
+  .caseview-body {
+    padding: 2rem;
+  }
+  
+  /* Sections */
+  .caseview-section {
+    margin-bottom: 2.5rem;
+  }
+  
+  .caseview-section-title {
+    color: #0078d4;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1.25rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #d1e9ff;
+  }
+  
+  /* Grid layout */
+  .caseview-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+  
+  @media (min-width: 768px) {
+    .caseview-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  /* Field items */
+  .caseview-field {
+    margin-bottom: 1rem;
+  }
+  
+  .caseview-full-width {
+    grid-column: 1 / -1;
+  }
+  
+  .caseview-label {
+    display: block;
+    color: #0078d4;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 0.35rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  
+  .caseview-value {
+    font-size: 1rem;
+    padding: 0.75rem 1rem;
+    color: black;
+    background-color: #f0f9ff;
+    border-radius: 6px;
+    border: 1px solid #d1e9ff;
+    min-height: 2.8rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .caseview-description {
+    min-height: 5rem;
+    line-height: 1.5;
+    white-space: pre-wrap;
+  }
+  
+  /* Document display */
+  .caseview-document {
+    display: flex;
+    align-items: center;
+    background-color: #f0f9ff;
+    border-radius: 8px;
+    padding: 1rem;
+    border: 1px solid #d1e9ff;
+  }
+  
+  .caseview-document-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 1rem;
+    color: #0078d4;
+  }
+  
+  .caseview-document-info {
+    flex: 1;
+  }
+  
+  .caseview-document-name {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+  
+  .caseview-document-link {
+    color: #0078d4;
+    text-decoration: none;
+    font-size: 0.9rem;
+    display: inline-block;
+    padding: 0.3rem 0;
+    font-weight: 500;
+    transition: color 0.2s;
+  }
+  
+  .caseview-document-link:hover {
+    color: #005ea2;
+    text-decoration: underline;
+  }
+  
+  /* Action buttons */
+  .caseview-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .caseview-back-button,
+  .caseview-delete-button,
+  .caseview-edit-button {
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    border: none;
+  }
+  
+  .caseview-back-button {
+    background-color: #f0f9ff;
+    color: #0078d4;
+    border: 1px solid #3580c6;
+  }
+  .caseview-delete-button {
+    background-color: #ff0d00;
+    color: #f0f9ff;
+    border: 1px solid #d1e9ff;
+  }
+  
+  .caseview-back-button:hover {
+    background-color: #d1e9ff;
+  }
+  
+  .caseview-edit-button {
+    background-color: #0078d4;
+    color: white;
+  }
+  
+  .caseview-edit-button:hover {
+    background-color: #005ea2;
+  }
+  
+  /* Loading state */
+  .caseview-loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+    color: #0078d4;
+  }
+  
+  .caseview-loading-spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #d1e9ff;
+    border-top: 5px solid #0078d4;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 1rem;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }

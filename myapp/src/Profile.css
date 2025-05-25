@@ -1,0 +1,88 @@
+/* Profile.css */
+
+body {
+    background-color: #bbdefb; /* Light blue background */
+    font-family: Arial, sans-serif;
+}
+
+.user-profile-heading {
+    color: #1e88e5; /* Blue color for the heading */
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2rem; /* Increase font size for better visibility */
+}
+
+.user-profile-form {
+    background: white; /* White background for the form */
+    padding: 25px;
+    border-radius: 10px; /* Slightly larger rounded corners */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* More pronounced shadow */
+    max-width: 500px; /* Max width */
+    margin: 30px auto; /* Center align and adjust margin */
+}
+
+.user-profile-label {
+    display: block;
+    margin: 15px 0 5px; /* Adjust margin for better spacing */
+    color: #1e88e5; /* Blue color for labels */
+    font-weight: bold; /* Bold labels for emphasis */
+    font-size: 1rem; /* Adjust font size */
+}
+
+.user-profile-input {
+    width: 100%;
+    padding: 12px; /* Increased padding for input fields */
+    border: 2px solid #1e88e5; /* Thicker border for better visibility */
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 20px; /* Increased margin for spacing */
+    focus: {
+        outline: none; /* Remove outline on focus */
+        border-color: #005599; /* Change border color on focus */
+    }
+}
+
+.user-profile-button {
+    background-color: #1e88e5; /* Blue button */
+    color: white; /* White text */
+    border: none;
+    padding: 12px 20px; /* Adjust padding */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    width: 100%; /* Full width */
+    font-size: 1rem; /* Adjust font size */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.user-profile-button:hover {
+    background-color: #005599; /* Darker blue on hover */
+}
+
+/* Additional styles for the top section */
+.top {
+    background-color: white; /* White background */
+    padding: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* Shadow for top section */
+    text-align: center; /* Center align contents */
+}
+
+.home-logo {
+    max-width: 100px; /* Logo size */
+}
+
+.topbs {
+    margin-top: 15px; /* Margin for spacing */
+}
+
+.tbutton {
+    background-color: #1e88e5; /* Blue button for top actions */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 10px 15px; /* Padding */
+    margin: 0 5px; /* Spacing between buttons */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.tbutton:hover {
+    background-color: #005599; /* Change color on hover */
+}
